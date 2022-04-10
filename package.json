@@ -6,7 +6,9 @@
   "author": "Alvaro Valladares",
   "license": "MIT",
   "scripts": {
+    "start": "node ./index.js",
     "dev": "nodemon ./index.js"
+    
   },
   "dependencies": {
     "apollo-server": "^3.6.1",
