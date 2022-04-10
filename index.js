@@ -48,7 +48,7 @@ async function server(){
     const app = express();
     app.use(graphqlUploadExpress());
     serverApollo.applyMiddleware({app});
-    await new Promise((r)=>app.listen({port:process.env.Port || 4000},r))
+    await new Promise((r)=>app.listen({port:process.env.port || 4000},r))
         console.log("#################")
         console.log(`Servidor iniciado en ${serverApollo.graphqlPath}`);
         console.log("#################")
